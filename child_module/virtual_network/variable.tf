@@ -1,1 +1,3 @@
-variable "virtual_network" {}
+variable "virtual_network" {
+    type = any
+}
