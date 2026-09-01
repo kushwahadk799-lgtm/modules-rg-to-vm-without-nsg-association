@@ -22,7 +22,7 @@ jobs:
 
     defaults:
       run:
-        working_directory: environment
+        directory: environment
 
     steps:
 
@@ -70,7 +70,7 @@ jobs:
       - name: Run Checkov
         uses: bridgecrewio/checkov-action@v12
         with:
-          working_directory: environment
+          directory: environment
 
       # ------------------------------------------------------
       - name: Azure Login
@@ -130,7 +130,7 @@ jobs:
 
     defaults:
       run:
-        working-directory: environment
+        directory: environment
 
     steps:
 
